@@ -1,12 +1,10 @@
-package me.tedesk.api;
+package me.tedesk.tlc.api;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
-import me.tedesk.TedeskLimpaChao;
-import me.tedesk.configs.Messages;
-import org.bukkit.ChatColor;
+import me.tedesk.tlc.TedeskLimpaChao;
 import org.bukkit.entity.Player;
 
 import java.lang.reflect.InvocationTargetException;
@@ -35,7 +33,7 @@ public class TitleAPI {
                 PacketAPI.getProtocolManager().sendServerPacket(p, time_packet);
                 PacketAPI.getProtocolManager().sendServerPacket(p, subtitle_packet);
                 PacketAPI.getProtocolManager().sendServerPacket(p, title_packet);
-            } catch (InvocationTargetException e) {
+            } catch (InvocationTargetException ignored) {
             }
             return;
         }
@@ -60,7 +58,7 @@ public class TitleAPI {
                 PacketAPI.getProtocolManager().sendServerPacket(p, time_packet);
                 PacketAPI.getProtocolManager().sendServerPacket(p, subtitle_packet);
                 PacketAPI.getProtocolManager().sendServerPacket(p, title_packet);
-            } catch (InvocationTargetException e) {
+            } catch (InvocationTargetException ignored) {
 
             }
         }

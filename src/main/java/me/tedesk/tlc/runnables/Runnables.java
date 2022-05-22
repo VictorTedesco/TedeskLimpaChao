@@ -1,6 +1,6 @@
-package me.tedesk.runnables;
+package me.tedesk.tlc.runnables;
 
-import me.tedesk.runnables.bukkit.DroppedItemsChecker;
+import me.tedesk.tlc.runnables.bukkit.DroppedItemsChecker;
 
 public class Runnables {
 

@@ -1,0 +1,12 @@
+name: TedeskLimpaChao
+main: me.tedesk.tlc.TedeskLimpaChao
+description: Plugin que imita a função limpar chão do ClearLagg.
+version: ${project.version}
+author: Tedesk
+depend: [ProtocolLib]
+api-version: 1.13
+
+commands:
+  tlc:
+    description: Main command of the plugin.
+    usage: /<command>

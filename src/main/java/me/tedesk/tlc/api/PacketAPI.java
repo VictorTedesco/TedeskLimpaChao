@@ -1,4 +1,4 @@
-package me.tedesk.api;
+package me.tedesk.tlc.api;
 
 import com.comphenix.protocol.ProtocolLibrary;
 import com.comphenix.protocol.ProtocolManager;

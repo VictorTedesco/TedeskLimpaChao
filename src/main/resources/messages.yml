@@ -1,7 +1,7 @@
 tempo:
   minutos:
     singular: " minuto."
-    plural: " minutos"
+    plural: " minutos."
   segundos:
     singular: " segundo."
     plural: " segundos."
@@ -31,19 +31,21 @@ texto:
     limpo:
       singular: "&4&l(!) &c%total% &7item foi removido do chão."
       plural: "&4&l(!) &c%total% &7itens foram removidos do chão."
-commands:
-  help:
+comandos:
+  ajuda:
     - "&cTedeskLimpaChao &7- Comandos"
     - ""
+    - "&c/tlc limpar &7- &fLimpa o chão."
     - "&c/tlc reload &7- &fRecarrega a configuração do plugin."
-  reload: "&a[BDS] Plugin recarregado com sucesso."
-  no-perm: "&c[BDS] Você não tem permissão para usar esse comando."
+  reload: "&a[TLC] Plugin recarregado com sucesso."
+  sem-perm: "&c[TLC] Você não tem permissão para usar esse comando."
 plugin:
-  incompatible:
+  incompativel:
     - "&cA versão do seu servidor está atrás da 1.8! §f%server_version%"
     - "&cSe você acha que isso é um erro, contate o autor Tedesk"
     - "&cSomente mensagens por chat serão enviadas."
-  enabled:
+  ativado:
     - "&aPlugin ativado! &f%plugin_version%"
-  disabled:
+  desativado:
     - "&cPlugin desativado! &f%plugin_version%"
+  erro-som: "&cO som %som% não existe na versão de seu servidor, cheque a lista de sons na documentação do Spigot."

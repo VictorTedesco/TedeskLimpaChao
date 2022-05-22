@@ -1,10 +1,11 @@
-package me.tedesk;
+package me.tedesk.tlc;
 
-import me.tedesk.configs.Config;
-import me.tedesk.configs.ConfigHandler;
-import me.tedesk.configs.Messages;
-import me.tedesk.runnables.Runnables;
-import me.tedesk.utils.Version;
+import me.tedesk.tlc.commands.TlcCommand;
+import me.tedesk.tlc.configs.Config;
+import me.tedesk.tlc.configs.ConfigHandler;
+import me.tedesk.tlc.configs.Messages;
+import me.tedesk.tlc.runnables.Runnables;
+import me.tedesk.tlc.utils.Version;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginDescriptionFile;
@@ -75,6 +76,7 @@ public class TedeskLimpaChao extends JavaPlugin {
         }
         createAndLoadConfigs();
         Runnables.setup();
+        plugin.getCommand("tlc").setExecutor(new TlcCommand());
         for (String enabled : Messages.ENABLED) {
             logger(ChatColor.translateAlternateColorCodes('&', enabled).replace("&", "§").replace("%plugin_version%", "(v" + pdf.getVersion() + ")"));
         }

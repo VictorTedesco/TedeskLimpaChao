@@ -1,6 +1,6 @@
-package me.tedesk.configs;
+package me.tedesk.tlc.configs;
 
-import me.tedesk.TedeskLimpaChao;
+import me.tedesk.tlc.TedeskLimpaChao;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
