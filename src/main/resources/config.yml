@@ -16,7 +16,7 @@ tempo:
     - 60
 perms:
   admin: "tlc.admin"
-tipo:
+tipo: #Disponíveis: ACTIONBAR, TITLE, CHAT
   aviso:
     - 'ACTIONBAR'
     - 'CHAT'
