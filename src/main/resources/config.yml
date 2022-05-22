@@ -1,0 +1,30 @@
+tempo:
+  total: 300
+  avisos:
+    - 180
+    - 60
+tipo:
+  aviso:
+    - 'ACTIONBAR'
+    - 'CHAT'
+  contagem:
+    - 'ACTIONBAR'
+  limpo:
+    - 'ACTIONBAR'
+    - 'CHAT'
+sons:
+  tipo:
+    aviso: NOTE_BASS
+    contagem: CLICK
+    limpo: NOTE_PLING
+  volume:
+    aviso: 1.0
+    contagem: 1.0
+    limpo: 1.0
+  pitch:
+    aviso: 1.0
+    contagem: 3.0
+    limpo: 1.0
+particulas:
+  tipo: SMOKE
+  data: 0

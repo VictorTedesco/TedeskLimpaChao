@@ -1,0 +1,49 @@
+tempo:
+  minutos:
+    singular: " minuto."
+    plural: " minutos"
+  segundos:
+    singular: " segundo."
+    plural: " segundos."
+texto:
+  actionbar:
+    aviso: "&4&l(!) &7Itens no chão serão removidos em &c%tempo%"
+    contagem: "&4&l(!) &7Os itens serão removidos em &c%tempo%"
+    limpo:
+      singular: "&4&l(!) &c%total% &7item foi removido do chão."
+      plural: "&4&l(!) &c%total% &7itens foram removidos do chão."
+  titles:
+    title:
+      aviso: "&4&l(!)"
+      contagem: "&4&l(!)"
+      limpo:
+        singular: "&4&l(!)"
+        plural: "&4&l(!)"
+    subtitle:
+      aviso: "&7Itens no chão serão removidos em &c%tempo%"
+      contagem: "&7Os itens serão removidos em &c%tempo%"
+      limpo:
+        singular: "&c%total% &7item foi removido do chão."
+        plural: "&c%total% &7itens foram removidos do chão."
+  chat:
+    aviso: "&4&l(!) &7Itens no chão serão removidos em &c%tempo%"
+    contagem: "&4&l(!) &7Os itens serão removidos em &c%tempo%"
+    limpo:
+      singular: "&4&l(!) &c%total% &7item foi removido do chão."
+      plural: "&4&l(!) &c%total% &7itens foram removidos do chão."
+commands:
+  help:
+    - "&cTedeskLimpaChao &7- Comandos"
+    - ""
+    - "&c/tlc reload &7- &fRecarrega a configuração do plugin."
+  reload: "&a[BDS] Plugin recarregado com sucesso."
+  no-perm: "&c[BDS] Você não tem permissão para usar esse comando."
+plugin:
+  incompatible:
+    - "&cA versão do seu servidor está atrás da 1.8! §f%server_version%"
+    - "&cSe você acha que isso é um erro, contate o autor Tedesk"
+    - "&cSomente mensagens por chat serão enviadas."
+  enabled:
+    - "&aPlugin ativado! &f%plugin_version%"
+  disabled:
+    - "&cPlugin desativado! &f%plugin_version%"
