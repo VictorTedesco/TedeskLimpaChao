@@ -27,6 +27,7 @@ public class TlcCommand implements CommandExecutor {
                     } catch (Throwable e) {
                         e.printStackTrace();
                     }
+                    return true;
                 }
                 if (args[0].equalsIgnoreCase("limpar")) {
                     if (s.hasPermission(Config.ADMIN)) {
@@ -65,6 +66,7 @@ public class TlcCommand implements CommandExecutor {
                             }
                             BukkitAPI.sendSoundToPlayer(ps, Config.SOUND_CLEAR, Config.SOUND_CLEAR_VOLUME, Config.SOUND_CLEAR_PITCH);
                         }
+                        return true;
                     }
                 } else {
                     for (String help : Messages.HELP) {
@@ -82,9 +84,9 @@ public class TlcCommand implements CommandExecutor {
                     } catch (Throwable e) {
                         e.printStackTrace();
                     }
-                    if (!s.hasPermission(Config.ADMIN)) {
-                        s.sendMessage(ChatColor.translateAlternateColorCodes('&', Messages.NO_PERM));
-                    }
+                }
+                if (!s.hasPermission(Config.ADMIN)) {
+                    s.sendMessage(ChatColor.translateAlternateColorCodes('&', Messages.NO_PERM));
                 }
                 return true;
             }
@@ -125,6 +127,10 @@ public class TlcCommand implements CommandExecutor {
                         }
                         BukkitAPI.sendSoundToPlayer(ps, Config.SOUND_CLEAR, Config.SOUND_CLEAR_VOLUME, Config.SOUND_CLEAR_PITCH);
                     }
+                    return true;
+                }
+                if (!s.hasPermission(Config.ADMIN)) {
+                    s.sendMessage(ChatColor.translateAlternateColorCodes('&', Messages.NO_PERM));
                     return true;
                 }
             } else {
