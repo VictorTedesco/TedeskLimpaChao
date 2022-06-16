@@ -5,7 +5,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import java.util.List;
 
 public class Config {
-
+    public static List<String> BLACKLISTED_WORLDS;
     public static int TIME;
     public static List<Integer> WARNING_DELAY;
     public static String ADMIN;
@@ -27,6 +27,7 @@ public class Config {
     public static void loadConfigs() {
         FileConfiguration config = ConfigHandler.getConfig("config");
 
+        BLACKLISTED_WORLDS = config.getStringList("mundos-imunes");
         TIME = config.getInt("tempo.total");
         WARNING_DELAY = config.getIntegerList("tempo.avisos");
 

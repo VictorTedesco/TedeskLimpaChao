@@ -9,6 +9,8 @@
 # Esse arquivo foi criado com a 1.8.8 em mente.
 # Por favor, mude os sons e efeitos desse arquivo considerando a versão de seu servidor.
 
+mundos-imunes:
+  - 'mundo2'
 tempo:
   total: 300
   avisos:
@@ -28,7 +30,7 @@ tipo: #Disponíveis: ACTIONBAR, TITLE, CHAT
 sons:
   tipo:
     aviso: NOTE_BASS
-    contagem: CLICK
+    contagem: NOTE_STICKS
     limpo: NOTE_PLING
   volume:
     aviso: 1.0
@@ -36,7 +38,7 @@ sons:
     limpo: 1.0
   pitch:
     aviso: 1.0
-    contagem: 3.0
+    contagem: 1.0
     limpo: 1.0
 efeitos:
   tipo: SMOKE
